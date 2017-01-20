@@ -1,0 +1,89 @@
+html body {
+	height: 100%;
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+body {
+	padding-bottom: 20px;
+}
+
+h1{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+#content {
+	padding-bottom: 50px;
+	width: 100%;
+}
+
+.container-fluid {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.container .hero {
+	height: 100%;
+}
+
+.jumbotron {
+	background: #000 url('../img/hero.png') top center;
+	min-height: 90vh;
+	background-size: cover;
+	overflow: hidden;
+		
+}
+
+#intro {
+	padding: 75px;
+	
+
+}
+
+p.sectioncopy {
+	margin-left: 20px;
+	padding: 10px;
+}
+
+h1.introcopy {
+	font-family: 'Indie Flower', cursive;
+	text-align: left;
+}
+
+img {
+	float: left;
+	display: inline-block;
+	margin: 10px 20px 10px auto;
+	border-radius: 50%;
+	width: 225px;
+	height: 225px;
+}
+
+@media screen and (max-width: 555px) {
+	img {
+		float: none;
+		margin: 20px auto;
+		position: relative;
+		max-width: 80%;
+		top: 10%;
+		left: 10%;
+		width: 80%;
+		height: auto;
+	}
+
+	h1.introcopy {
+		text-align: center;
+	}
+}
+
+#portfolio {
+	padding: 75px;
+}
+
+#about {
+	padding: 75px;
+}
+
+#contact {
+	padding: 75px;
+}
