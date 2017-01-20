@@ -6,6 +6,7 @@ html body {
 
 body {
 	padding-bottom: 20px;
+	position: relative;
 }
 
 h1{
@@ -35,9 +36,7 @@ h1{
 }
 
 #intro {
-	padding: 75px;
-	
-
+	padding: 40px;
 }
 
 p.sectioncopy {
@@ -59,6 +58,7 @@ img {
 	height: 225px;
 }
 
+/* Centers profile image and header on smaller viewports */
 @media screen and (max-width: 555px) {
 	img {
 		float: none;
@@ -74,16 +74,16 @@ img {
 	h1.introcopy {
 		text-align: center;
 	}
-}
+} /*media query end bracket */
 
 #portfolio {
-	padding: 75px;
+	padding: 40px;
 }
 
 #about {
-	padding: 75px;
+	padding: 40px;
 }
 
 #contact {
-	padding: 75px;
+	padding: 40px;
 }

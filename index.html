@@ -19,11 +19,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  
+  <body data-spy="scroll" data-target="#nav" data-offset="20">
 
 <!-- NavBar -->
    
-   <div class="container">
+   <div class="container" id="nav">
     <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,10 +69,7 @@
     <div id="intro">
       <img src="img/igprofpic.jpg">
       <h1 class="introcopy">Hi there, I'm Nate!</h1>
-      <p class="sectioncopy">
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet, mea velit denique ad, ne duo omnis melius abhorreant. Ex eripuit tacimates vix, vix an platonem constituto, ne mel labore partiendo eloquentiam. Mel sonet antiopam ei, at omnesque liberavisse pri. Ut mea gubergren reformidans, est ad mandamus tractatos, vivendum platonem sea eu. Vis stet tritani iuvaret ex, ea vim populo forensibus. Qui ut choro saepe tacimates. </p>
+      <p class="sectioncopy">I am a Web Developer based about an hour north of Nashville, TN, USA. I specialize in providing a dynamic web presence for small businesses, artists and musicians. </p>
     </div> <!-- /.intro -->
   </div> <!-- /.container -->
 
@@ -94,15 +92,26 @@
   <div class="container"> 
     <div id="about">
       <h1>Who Am I??</h1>
+      <p class="sectioncopy">
+        I am a music lover and an avid live music enthusiast. I attend as many concerts and music festivals as I feasibly can. These experiences and the creativity demonstrated at these events have greatly influenced my own personal creativity and my work. It is this passion that drives me to provide the best possible development experience and ultimately the best web presence to all of my clients. <br>
+      <br>
+        I served over 5 years as a Medic in the US Army National Guard. My experience and training taught me many universally desirable skills. The most important of which is the ability to pay extreme attention to detail, without losing sight of the 'big picture'. This is especially important in web development, just as it is treating casualties on the battlefield. <br>
+      <br>
+        Starting or owning your own business is a great dream for many individuals. A key factor in the success or failure of any business is the image that it presents. These days having a beautiful, user friendly web page  is vital to maintaining a positive company image. I can help those with small businesses achieve this by providing the best development experience available to your company or organization. I look forward to working with you!</p>
 
     </div> <!-- /#about -->
   </div> <!-- /.container -->
 
-  <!-- About -->
+  <!-- Contact -->
 
   <div class="container"> 
     <div id="contact">
       <h1>Getting in Touch</h1>
+      <p class="sectioncopy">If you would like to get in touch, you may email me directly at nathanwest08@gmail.com  <br>
+        <br>
+        -OR-<br>
+        <br>
+        You can follow me on Instagram: <a href="http://instagram.com/natestrodamus">@natestrodamus</a></p>
 
     </div> <!-- /#contact -->
   </div> <!-- /.container -->
@@ -112,5 +121,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+  // <!-- Scroll Animations -->
+      var $root = $('html, body');
+        $('a').click(function() {
+      var href = $.attr(this, 'href');
+        $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+    return false;
+  // <!-- Scrollspy Script -->
+  $('body').scrollspy({ target: '#navbar-example' })
+});
+    </script>
   </body>
 </html>
