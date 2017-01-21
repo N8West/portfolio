@@ -49,7 +49,7 @@ h1.introcopy {
 	text-align: left;
 }
 
-img #intro {
+img.intro {
 	float: left;
 	display: inline-block;
 	margin: 10px 20px 10px auto;
@@ -60,7 +60,7 @@ img #intro {
 
 /* Centers profile image and header on smaller viewports */
 @media screen and (max-width: 555px) {
-	img #intro {
+	img.intro {
 		float: none;
 		margin: 20px auto;
 		position: relative;
@@ -69,6 +69,7 @@ img #intro {
 		left: 10%;
 		width: 80%;
 		height: auto;
+		border-radius: 50%;
 	}
 
 	h1.introcopy {
