@@ -12,6 +12,8 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Maven+Pro|Quicksand" rel="stylesheet">
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,7 +37,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Nate West</a>
+      <div class="navbrand">
+        <a class="navbar-brand" href="#">
+        <img src="img/navbarbrand.png" class="brand">
+      </a>
+    </div> <!-- /.navbrand -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,19 +61,18 @@
   
 <!-- Jumbotron Hero Header -->
    
-   <a href="#intro">
     <div class="jumbotron">
       <div class="container hero">
       </div> <!-- /.container -->
     </div> <!-- /.jumbotron -->
-  </a> <!-- /#intro -->
+  
 
 <!-- Introduction -->
 
     
     <div class="container">
     <div id="intro">
-      <img src="img/igprofpic.jpg">
+      <img src="img/igprofpic.jpg" class="intro">
       <h1 class="introcopy">Hi there, I'm Nate!</h1>
       <p class="sectioncopy">I am a Web Developer based about an hour north of Nashville, TN, USA. I specialize in providing a dynamic web presence for small businesses, artists and musicians. </p>
     </div> <!-- /.intro -->
@@ -112,9 +117,12 @@
         -OR-<br>
         <br>
         You can follow me on Instagram: <a href="http://instagram.com/natestrodamus">@natestrodamus</a></p>
+        <p class="top"> <a href="#">Back to Top</a></p>
 
     </div> <!-- /#contact -->
   </div> <!-- /.container -->
+
+  
   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -134,6 +142,15 @@
     return false;
   // <!-- Scrollspy Script -->
   $('body').scrollspy({ target: '#navbar-example' })
+});
+
+  // <!-- Nav collapse on click for mobile -->
+  $(function() {
+    $('.nav a').on('click', function(){ 
+        if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+        }
+    });
 });
     </script>
   </body>
