@@ -33,12 +33,35 @@ h1 {
 }
 
 .jumbotron {
-	background: #000 url('../img/hero.png') top center;
+	background: #000 url('../img/escher2.png') top center; /*Image courtesy of subtlepatterns.com Thanks! */
 	min-height: 90vh;
-	background-size: cover;
+	background-size: auto;
 	overflow: hidden;
 		
 }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.logom {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .logom {
+    display: block;
+    margin: 0 auto;
+    height: 70vh;
+  } 
+}
+
 
 #intro {
 	padding: 40px;
@@ -72,6 +95,7 @@ img.intro {
 	background: url(../img/blu.jpg);
 	background-size: cover;
 	padding-left: 70px;
+  border-radius: 0 50px;
 }
 
 #contact {
