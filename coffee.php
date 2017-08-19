@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <?php 
+/* Short and sweet */
+define('WP_USE_THEMES', false);
+require('./wp-blog-header.php');
+?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Nate West | Web Designer</title>
-    <meta name="description" content="Nate West | I am a Web Designer specializing in websites and digital marketing solutions for small businesses, artist and musicians.">
+    <title>Nate West | Web Developer</title>
+    <meta name="description" content="Nate West | I am a Web Developer specializing in websites and digital marketing solutions for small businesses, artist and musicians.">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +60,7 @@
         <li class="active"><a href="#intro">Hello! <span class="sr-only">(current)</span></a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">A Bit About Myself</a></li>
-        <li><a href="#services">What I Do</a></li>
+        <li><a href="#services">What I Offer</a></li>
         <li><a href="#contact">Getting in Touch</a></li>
               </ul>
       
@@ -81,7 +87,7 @@
     <div id="intro">
       <img src="img/azblpic.png" class="intro" alt="Profile Picture | Nate West">
       <h1 class="introcopy">Hi there, I'm Nate!</h1>
-      <p class="sectioncopy">I'm a web designer and front end developer based about an hour north of Nashville, TN, USA. I specialize in providing quality websites and other digital marketing solutions for small businesses, artists, musicians and makers. </p>
+      <p class="sectioncopy">I am a Web Developer based about an hour north of Nashville, TN, USA. I specialize in providing quality websites and digital marketing solutions for small businesses, artists, musicians and makers. </p>
     </div> <!-- /.intro -->
   </div> <!-- /.container -->
 
@@ -94,7 +100,7 @@
       <p class="sectioncopy">
         <br>
         <br>
-        Beautiful portofolio pieces coming soon! </p>
+        Lorem ipsum dolor sit amet, mea velit denique ad, ne duo omnis melius abhorreant. Ex eripuit tacimates vix, vix an platonem constituto, ne mel labore partiendo eloquentiam. Mel sonet antiopam ei, at omnesque liberavisse pri. Ut mea gubergren reformidans, est ad mandamus tractatos, vivendum platonem sea eu. Vis stet tritani iuvaret ex, ea vim populo forensibus. Qui ut choro saepe tacimates. </p>
 
     </div> <!-- /#portfolio -->
   </div> <!-- /.container -->
@@ -105,7 +111,7 @@
     <div id="about">
       <h1>Who Am I??</h1>
       <p class="sectioncopyb">
-        I am a music lover and an avid live music enthusiast. I love travelling all across the country to attend concerts and music festivals. These experiences and the creativity demonstrated at these events have greatly influenced my own personal creativity and my work. It is this passion that fuels my drive to help others share their passions with the world and ultimately establish the most effective web presence available for all of my clients. <br>
+        I am a music lover and an avid live music enthusiast. I attend as many concerts and music festivals as I feasibly can. These experiences and the creativity demonstrated at these events have greatly influenced my own personal creativity and my work. It is this passion that drives me to help others share their passions with the world, and ultimately establish the most effective web presence available for all of my clients. <br>
       <br>
         I also served over 5 years as a Medic in the US Army National Guard. My experience and training during that time taught me many universal skills. The most important of which is the ability to pay extreme attention to detail, without losing sight of the 'big picture'. This is especially important when building a comprehensive and focused digital marketing strategy, just as it is treating casualties on the battlefield.</p>
 
@@ -121,8 +127,8 @@
       <p class="sectioncopy">
         I provide powerful web presences and digital marketing solutions to individuals and companies who are as passionate about what they do as I am about web design and development and who wish to share that passion and the fruits of their labor with the world. I typcially cater to fellow creative types such as artists, tattoo shops, and vaping companies to name a few. A professional website that showcases their capabilites or products is critical to keep up with the ever-changing nature of today's digital age. When compared to traditional methods of marketing and advertising, such as TV or radio commercials, ads in printed material or billboards, the capabilities of a properly designed and built website and digital marketing strategy prove to be far more effective in establishing a connection with potential customers. </p>
 
-      <p class="sectioncopy">
-        In today's mobile-first world, scrolling and swiping have all but become an inherent behavior for the modern human. I specialize in designing and developing concise, scrolling, single web pages that present all of this critical information in a beautiful, comfortable manner that caters to this behavior. First impressions are everything, make yours count. </p>
+        <p class="sectioncopy">
+          Customers who find their way to your website are typically looking for one of a few specific pieces of information. They want to know who you are, where you are, what you do/sell, how much it costs (if appopriate), and how to get in touch with you or buy what you're selling. In today's mobile-first world, scrolling and swiping have all but become an inherent behavior for humans. I specialize in concise, scrolling, single web pages that present all of this critical information in a beautiful, comfortable manner that caters to this behavior. First impressions are everything, make yours count. </p>
 
   
       <p class="sectioncopy">
@@ -131,7 +137,7 @@
           <li>Designing and developing concise, effective web sites.</li>
           <li>Setting up and linking social media accounts.</li>
           <li>Providing a comprehensive, digital marketing consultancy.</li>
-          <li> graphics consistent with brand identity.</li>
+          <li>Providing or sourcing additional graphics consistent with brand identity.</li>
         </ul>
       </p>
     </div> <!-- /#services -->
